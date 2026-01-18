@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://github.com/Adham-Saeed630.io/Ecommerce-product-page",
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.1",
     "@tailwindcss/vite": "^4.1.17",
