@@ -10,20 +10,20 @@ const lightboxSlice = createSlice({
         },
         images:[
             {
-                mainImage: "../Image/assets/image-product-1.jpg",
-                thumbnail: "../Image/assets/image-product-1-thumbnail.jpg"
+                mainImage: "../Image/image-product-1.jpg",
+                thumbnail: "../Image/image-product-1-thumbnail.jpg"
             },
             {
-                mainImage: "../Image/assets/image-product-2.jpg",
-                thumbnail: "../Image/assets/image-product-2-thumbnail.jpg"
+                mainImage: "../Image/image-product-2.jpg",
+                thumbnail: "../Image/image-product-2-thumbnail.jpg"
             },
             {
-                mainImage: "../Image/assets/image-product-3.jpg",
-                thumbnail: "../Image/assets/image-product-3-thumbnail.jpg"
+                mainImage: "../Image/image-product-3.jpg",
+                thumbnail: "../Image/image-product-3-thumbnail.jpg"
             },
             {
-                mainImage: "../Image/assets/image-product-4.jpg",
-                thumbnail: "../Image/assets/image-product-4-thumbnail.jpg"
+                mainImage: "../Image/image-product-4.jpg",
+                thumbnail: "../Image/image-product-4-thumbnail.jpg"
             },
         ]
     },

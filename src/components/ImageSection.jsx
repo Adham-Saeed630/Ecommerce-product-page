@@ -6,7 +6,7 @@ function ImageSection(){
         <>
             <div className="lg:flex flex-col gap-8 min-w-100 select-none hidden">
                 <div>
-                    <img src="../Image/assets/image-product-1.jpg" alt="Product Image" className="w-100 rounded-xl" />
+                    <img src="../Image/image-product-1.jpg" alt="Product Image" className="w-100 rounded-xl" />
                 </div>
                 <Thumbnails justify="between"/>
             </div>

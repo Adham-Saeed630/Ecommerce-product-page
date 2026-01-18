@@ -40,15 +40,15 @@ function DetailsSection(){
             <div className="flex flex-1 lg:flex-row flex-col items-center gap-4 text-(--color-neutral-very-dark-blue) font-bold select-none">
                 <div className="flex flex-1 items-center bg-(--color-neutral-light-grayish-blue) py-2 rounded-lg justify-around w-full lg:max-w-75">
                     <button className="flex items-center cursor-pointer px-6 h-full" onClick={() => setQuantity(quantity > 0 ? quantity - 1 : 0)}>
-                        <img src="../Image/assets/icon-minus.svg" alt="minus" />
+                        <img src="../Image/icon-minus.svg" alt="minus" />
                     </button>
                     <span className="px-4">{quantity}</span>
                     <button className="flex items-center cursor-pointer px-6 h-full" onClick={() => setQuantity(quantity + 1)}>
-                        <img src="../Image/assets/icon-plus.svg" alt="plus" />
+                        <img src="../Image/icon-plus.svg" alt="plus" />
                     </button>
                 </div>
                 <button className="flex-1 flex justify-center items-center gap-4 py-4 cursor-pointer bg-(--color-primary-dark) rounded-lg hover:bg-(--color-primary) transition-bg duration-150 w-full lg:max-w-75" onClick={() => {quantity > 0 && dispatch(addToCart(product)); console.log(cartProducts)}}>
-                    <img src="../Image/assets/icon-cart.svg" alt="Add to cart" className="text-(--color-neutral-very-dark-blue)" />
+                    <img src="../Image/icon-cart.svg" alt="Add to cart" className="text-(--color-neutral-very-dark-blue)" />
                     <span>Add to cart</span>
                 </button>
             </div>
