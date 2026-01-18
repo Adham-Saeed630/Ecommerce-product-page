@@ -1,12 +1,13 @@
 import Thumbnails from './Thumbnails';
 import ImageGallery from './ImageGallery';
+import productImage1 from '../assets/Image/image-product-1.jpg';
 
 function ImageSection(){
     return(
         <>
             <div className="lg:flex flex-col gap-8 min-w-100 select-none hidden">
                 <div>
-                    <img src="../Image/image-product-1.jpg" alt="Product Image" className="w-100 rounded-xl" />
+                    <img src={productImage1} alt="Product Image" className="w-100 rounded-xl" />
                 </div>
                 <Thumbnails justify="between"/>
             </div>

@@ -4,6 +4,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from '../store/cart';
 import NavLink from "./NavLink";
 import Cart from './cart';
+import iconMenu from '../assets/Image/icon-menu.svg';
+import iconClose from '../assets/Image/icon-close.svg';
+import logo from '../assets/Image/logo.svg';
+import iconCart from '../assets/Image/icon-cart.svg';
+import avatar from '../assets/Image/image-avatar.png';
 
 
 function Nav(){
@@ -24,12 +29,12 @@ function Nav(){
         <nav className="w-full flex justify-between items-center px-6 lg:py-0 py-5 border-b select-none relative" style={{ borderColor: 'var(--color-neutral-grayish-blue)' }}>
             {isNavOpen && <div className="fixed inset-0 bg-black opacity-50 z-3"></div>}
             <div className="flex lg:gap-16 items-center gap-6">
-                <img src="../Image/icon-menu.svg" alt="Menu" className={`w-5 lg:hidden cursor-pointer`} onClick={() => handleToggleNav()} />
+                <img src={iconMenu} alt="Menu" className={`w-5 lg:hidden cursor-pointer`} onClick={() => handleToggleNav()} />
                 <Link to="/Ecommerce-product-page/">
-                    <img src="../Image/logo.svg" alt="Logo" />
+                    <img src={logo} alt="Logo" />
                 </Link>
                 <ul className={`flex flex-col lg:gap-10 absolute lg:flex-row lg:relative top-0 left-0 lg:px-0 pl-10 pr-40 lg:h-fit h-screen lg:py-0 py-10 bg-white transform ${isNavOpen ? " " : "-translate-x-full"} lg:translate-x-0 transition-transform duration-300 ease-in-out z-4`}>
-                    <img src="../Image/icon-close.svg" alt="Close" className="w-5 pb-10 lg:hidden cursor-pointer" onClick={() => handleToggleNav()} />
+                    <img src={iconClose} alt="Close" className="w-5 pb-10 lg:hidden cursor-pointer" onClick={() => handleToggleNav()} />
                     <NavLink to="/Ecommerce-product-page/collections">Collections</NavLink>
                     <NavLink to="/Ecommerce-product-page/men">Men</NavLink>
                     <NavLink to="/Ecommerce-product-page/women">Women</NavLink>
@@ -40,9 +45,9 @@ function Nav(){
             <div className="flex items-center lg:gap-12 gap-8">
                 <div className="relative" onClick={() => dispatch(toggleCart())}>
                     {cartItemCount > 0 && <span className="absolute py-0.5 px-1 text-white rounded-full -top-3 -right-2" style={{ backgroundColor: 'var(--color-primary-dark)' }}>{cartItemCount}</span>}
-                    <img src="../Image/icon-cart.svg" alt="cart" className="cursor-pointer" />
+                    <img src={iconCart} alt="cart" className="cursor-pointer" />
                 </div>
-                <img src="../Image/image-avatar.png" alt="avatar" className="w-12 cursor-pointer rounded-full" style={{ borderWidth: '3px', borderColor: 'var(--color-primary-dark)' }} onMouseEnter={(e) => e.target.style.border = '3px solid var(--color-primary-dark)'} onMouseLeave={(e) => e.target.style.border = 'none'}/>
+                <img src={avatar} alt="avatar" className="w-12 cursor-pointer rounded-full" style={{ borderWidth: '3px', borderColor: 'var(--color-primary-dark)' }} onMouseEnter={(e) => e.target.style.border = '3px solid var(--color-primary-dark)'} onMouseLeave={(e) => e.target.style.border = 'none'}/>
             </div>
             {isCartOpen && <Cart/>}
         </nav>
