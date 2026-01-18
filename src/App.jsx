@@ -16,7 +16,7 @@ function App(){
         {isOpen && <LightBox />}
         <Nav />
         <Routes>
-          <Route path="/" element={<Body />} />
+          <Route path="/Ecommerce-product-page/" element={<Body />} />
         </Routes>
       </div>
     </BrowserRouter>

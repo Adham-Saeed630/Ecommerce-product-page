@@ -25,7 +25,7 @@ function Nav(){
             {isNavOpen && <div className="fixed inset-0 bg-black opacity-50 z-3"></div>}
             <div className="flex lg:gap-16 items-center gap-6">
                 <img src="../Image/icon-menu.svg" alt="Menu" className={`w-5 lg:hidden cursor-pointer`} onClick={() => handleToggleNav()} />
-                <Link to="/">
+                <Link to="/Ecommerce-product-page/">
                     <img src="../Image/logo.svg" alt="Logo" />
                 </Link>
                 <ul className={`flex flex-col lg:gap-10 absolute lg:flex-row lg:relative top-0 left-0 lg:px-0 pl-10 pr-40 lg:h-fit h-screen lg:py-0 py-10 bg-white transform ${isNavOpen ? " " : "-translate-x-full"} lg:translate-x-0 transition-transform duration-300 ease-in-out z-4`}>
