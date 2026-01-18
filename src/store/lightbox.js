@@ -1,29 +1,37 @@
 import { createSlice } from '@reduxjs/toolkit';
+import img1 from '../assets/Image/image-product-1.jpg';
+import img2 from '../assets/Image/image-product-2.jpg';
+import img3 from '../assets/Image/image-product-3.jpg';
+import img4 from '../assets/Image/image-product-4.jpg';
+import thumb1 from '../assets/Image/image-product-1-thumbnail.jpg';
+import thumb2 from '../assets/Image/image-product-2-thumbnail.jpg';
+import thumb3 from '../assets/Image/image-product-3-thumbnail.jpg';
+import thumb4 from '../assets/Image/image-product-4-thumbnail.jpg';
 
 const lightboxSlice = createSlice({
     name: "lightbox",
     initialState: {
         isOpen: false,
         activeImage: {
-            src: "../Image/image-product-1.jpg",
+            src: img1,
             index: 0,
         },
         images:[
             {
-                mainImage: "../Image/image-product-1.jpg",
-                thumbnail: "../Image/image-product-1-thumbnail.jpg"
+                mainImage: img1,
+                thumbnail: thumb1
             },
             {
-                mainImage: "../Image/image-product-2.jpg",
-                thumbnail: "../Image/image-product-2-thumbnail.jpg"
+                mainImage: img2,
+                thumbnail: thumb2
             },
             {
-                mainImage: "../Image/image-product-3.jpg",
-                thumbnail: "../Image/image-product-3-thumbnail.jpg"
+                mainImage: img3,
+                thumbnail: thumb3
             },
             {
-                mainImage: "../Image/image-product-4.jpg",
-                thumbnail: "../Image/image-product-4-thumbnail.jpg"
+                mainImage: img4,
+                thumbnail: thumb4
             },
         ]
     },

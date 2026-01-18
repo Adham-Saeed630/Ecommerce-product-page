@@ -11,7 +11,7 @@ function Thumbnails(){
         <div className={`flex justify-around w-full`}>
             {images.map((image, index)=>{
                 return(
-                    <div className={`w-20 cursor-pointer hover:border-(--color-primary-dark) ${index === activeImageIndex && 'border-3 border-(--color-primary-dark)'} rounded-xl`} key={index} onClick={() => dispatch(changeActiveImage({src: image.mainImage, index: index}))} >
+                    <div className={`w-20 cursor-pointer border-2 border-transparent hover:border-(--color-primary-dark) hover:border-2 ${index === activeImageIndex && 'border-2 border-(--color-primary-dark)'} rounded-xl`} key={index} onClick={() => dispatch(changeActiveImage({src: image.mainImage, index: index}))} >
                         <img src={image.thumbnail} alt="Product Image 1" className="rounded-lg hover:opacity-50 transition-opacity duration-250" onClick={() => dispatch(openLightbox())}/>
                     </div>
                 )
