@@ -15,7 +15,7 @@ function DetailsSection(){
         quantity: quantity,
         price: 125.00,
         totalPrice: (125.00 * quantity).toFixed(2),
-        thumbnail: "../Image/assets/image-product-1-thumbnail.jpg",
+        thumbnail: "../Image/image-product-1-thumbnail.jpg",
     }
 
     return (
