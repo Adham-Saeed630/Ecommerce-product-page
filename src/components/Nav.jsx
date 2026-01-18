@@ -30,7 +30,7 @@ function Nav(){
                 </Link>
                 <ul className={`flex flex-col lg:gap-10 absolute lg:flex-row lg:relative top-0 left-0 lg:px-0 pl-10 pr-40 lg:h-fit h-screen lg:py-0 py-10 bg-white transform ${isNavOpen ? " " : "-translate-x-full"} lg:translate-x-0 transition-transform duration-300 ease-in-out z-4`}>
                     <img src="../Image/icon-close.svg" alt="Close" className="w-5 pb-10 lg:hidden cursor-pointer" onClick={() => handleToggleNav()} />
-                    <NavLink to="/collections">Collections</NavLink>
+                    <NavLink to="/Ecommerce-product-page/collections">Collections</NavLink>
                     <NavLink to="/Ecommerce-product-page/men">Men</NavLink>
                     <NavLink to="/Ecommerce-product-page/women">Women</NavLink>
                     <NavLink to="/Ecommerce-product-page/about">About</NavLink>
