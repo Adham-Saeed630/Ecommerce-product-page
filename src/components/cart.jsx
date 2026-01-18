@@ -24,7 +24,7 @@ function Cart(){
                                 </div>
                             </div>
                             <div className="flex flex-col justify-center cursor-pointer" onClick={() => dispatch(removeFromCart(product))} >
-                                <img className="h-fit" src="../src/assets/icon-delete.svg" alt="Delete Product" />
+                                <img className="h-fit" src="../Image/assets/icon-delete.svg" alt="Delete Product" />
                             </div>
                         </div>
                     )
