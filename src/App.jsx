@@ -11,7 +11,7 @@ function App(){
   const isOpen = useSelector( state => state.lightbox.isOpen)
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Ecommerce-product-page">
       <div className="relative flex flex-col min-h-screen">
         {isOpen && <LightBox />}
         <Nav />
